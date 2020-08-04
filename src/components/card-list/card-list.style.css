@@ -1,7 +1,23 @@
 .card-list {
-    width: 85vw;
+    width: 100vw;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .card-list {
+        width: 85vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }    
+}
+
+@media (min-width: 1200px) {
+    .card-list {
+        width: 85vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }    
 }
